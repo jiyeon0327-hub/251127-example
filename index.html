@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>저녁메뉴 추천 챗봇</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="app" class="container">
+      <header class="header">
+        <h1>🍽️ 저녁메뉴 추천 챗봇</h1>
+        <div class="api-status">
+          <span id="apiStatusIndicator" class="status-dot"></span>
+          <span id="apiStatusText" class="status-text">API 확인 중...</span>
+        </div>
+      </header>
+
+      <div class="chat-container">
+        <div id="chatHistory" class="chat-history">
+          <div class="message bot-message">
+            <p>안녕하세요! 저는 저녁 메뉴 추천 봇입니다. 오늘 저녁에 뭘 먹을지 고민이신가요? 편하게 말씀해주세요! 😊</p>
+          </div>
+        </div>
+
+        <div class="input-area">
+          <input 
+            type="text" 
+            id="userInput" 
+            class="input-field" 
+            placeholder="메뉴에 대해 물어봐주세요..." 
+            autocomplete="off"
+          />
+          <button id="sendButton" class="send-button">전송</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
